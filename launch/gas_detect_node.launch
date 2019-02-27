@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<launch>
+    <!-- Gas Detector Node NODE-->
+	<node pkg="gas_detect_driver_node" type="gas_detect_driver_node_main" name="gas_detect_driver_node" output="screen" respawn="false" >
+        <!-- String for Serial Port Name -->
+        <param name="serial_port_name" type="string" value="/dev/ttyUSB"/>
+        <!-- Int for Serial Port Num -->
+        <param name="serial_port_num" type="int" value="0"/>
+    </node>
+</launch>
